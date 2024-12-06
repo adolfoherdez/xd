@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('frontend')); //Para importar la pagina al servidor
+app.use(express.static('frontenddos')); //Para importar la pagina al servidor
 
 // Configuración de la base de datos MySQL
 const db = mysql.createConnection({
