@@ -61,7 +61,7 @@
             const password = document.getElementById("password").value;
 
             try {
-                const response = await fetch("http://localhost:3000/pedidos", {
+                const response = await fetch("xd-production-e590.up.railway.app/pedidos", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -109,7 +109,7 @@
     // Confirmación para cancelar el pedido
     if (confirm("¿Estás seguro de que deseas cancelar este pedido?")) {
         // Realizar la solicitud al backend para cancelar el pedido
-        fetch("http://localhost:3000/cancelarPedido", {
+        fetch("xd-production-e590.up.railway.app/cancelarPedido", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -138,7 +138,7 @@ function cargarPedidos() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    fetch("http://localhost:3000/pedidos", {
+    fetch("xd-production-e590.up.railway.app/pedidos", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
