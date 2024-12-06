@@ -5,7 +5,7 @@ const DB_NAME = process.env.DB_NAME || 'logistica';
 const DB_PORT = process.env.DB_PORT || 3306;
 const PORT = process.env.PORT || 3000;
 
-//mysql://root:ZJdiQpNRcQewRLqQWAvcNaksXIGfwAbi@autorack.proxy.rlwy.net:10285/railway
+//mysql://root:sDzuItTIMTEbIONwABDCpsruqqaPjjbO@junction.proxy.rlwy.net:59700/railway
 
 module.exports = {
     DB_HOST,
