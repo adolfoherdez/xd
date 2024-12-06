@@ -5,12 +5,16 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT, PORT} = require('./config');
 const app = express();
+const path = require('path');
+
+
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('frontenddos')); //Para importar la pagina al servidor
+app.use(express.static(path.join(__dirname, 'CSS')));
 
 // Configuración de la base de datos MySQL
 const db = mysql.createConnection({
